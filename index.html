@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Programa Académico</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"> <!-- Enlace al archivo CSS externo -->
+</head>
+<body>
+    <div class="container mt-5">
+      
+        <div class="form-container">
+            
+            <div class="header"> 
+                <img src="unicolombo.png" alt="Logo UNICOLMBO" class="logo"> 
+                <h2>Registro de Programa Académico</h2> 
+            </div>
+           
+            <form>
+                <div class="form-group">
+                    <label for="nombrePrograma">Nombre Del Programa *</label>
+                    <input type="text" class="form-control" id="nombrePrograma" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombreAbreviado">Nombre Abreviado</label>
+                    <input type="text" class="form-control" id="nombreAbreviado">
+                </div>
+                <div class="form-group">
+                    <label for="codigoInstitucional">Codigo Institucional *</label>
+                    <input type="text" class="form-control" id="codigoInstitucional" required>
+                </div>
+                <div class="form-group">
+                    <label for="nivelFormacion">Nivel De Formación *</label>
+                    <select class="form-control" id="nivelFormacion" required>
+                        <option value="">Seleccione</option>
+                        <!-- Opciones -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="programaAcademico">Programa Académico *</label>
+                    <input type="text" class="form-control" id="programaAcademico" required>
+                </div>
+                <div class="form-group">
+                    <label for="snies">SNIES</label>
+                    <input type="text" class="form-control" id="snies">
+                </div>
+                <div class="form-group">
+                    <label for="coordinadorAcademico">Coordinador Académico *</label>
+                    <select class="form-control" id="coordinadorAcademico" required>
+                        <option value="">Seleccione</option>
+                        <!-- Opciones -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="estado">Estado *</label>
+                    <select class="form-control" id="estado" required>
+                        <option value="">Seleccione</option>
+                        <!-- Opciones -->
+                    </select>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="realizarPracticas">
+                    <label class="form-check-label" for="realizarPracticas">Realizar prácticas</label>
+                </div>
+                <div class="form-group">
+                    <label for="duracion">Duración</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control" id="duracion">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Meses</span>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Agregar</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
